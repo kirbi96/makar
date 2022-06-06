@@ -1,0 +1,19 @@
+.commandContainer{
+    margin-top: 32px;
+}
+
+.skillGroupTitle {
+    padding-bottom: 6px;
+    padding-top: 12px;
+}
+
+
+@media (min-width: 0) and (max-width: 999px) {
+    .commandContainer{
+        margin-top: 32px;
+    }
+
+    .skillGroupTitle {
+        font-weight: bold;
+    }
+}

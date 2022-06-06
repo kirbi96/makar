@@ -1,0 +1,83 @@
+.App {
+  background: black;
+}
+
+.text {
+  font-size: 22px;
+  color: #d1fb84;
+  font-family: CodeFont;
+}
+
+
+.compContainer{
+  background: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.comp {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1000px;
+  height: 1000px;
+}
+
+.inCompContainer{
+  width: 700px;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+
+.back{
+  color: white;
+  z-index: 1000;
+  position: absolute;
+  left: -10px;
+  top: -90px;
+}
+
+
+@media (min-width: 700px) and (max-width: 999px) {
+
+  .comp {
+    width: 800px;
+    height: 800px;
+  }
+
+  .inCompContainer{
+    width: 500px;
+    margin-top: 140px;
+    margin-left: 100px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+
+
+@media (min-width: 0) and (max-width: 699px) {
+
+  .comp {
+    background-image: none !important;
+  }
+
+  .inCompContainer{
+    width: 80%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+
+}
+
+
+

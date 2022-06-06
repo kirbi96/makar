@@ -1,0 +1,67 @@
+.skillContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.skillStackName{
+   min-width: 200px;
+}
+
+.progressBarContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 16px;
+    width: 300px;
+    height: 22px;
+    border: 1px solid #d1fb84;
+}
+
+.progressBarFull{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 3px 2px 0;
+}
+
+.progressBarItem{
+    height: 100%;
+    width: 3px;
+    margin-left: 3px;
+    background-color: #d1fb84;
+}
+
+.percentText{
+    padding-right: 3px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+@media (min-width: 0) and (max-width: 699px) {
+    .skillStackName{
+        min-width: auto;
+    }
+
+    .skillContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 8px;
+    }
+
+    .progressBarContainer{
+        margin-left: 0;
+        max-width: 260px;
+        margin-top: 8px;
+    }
+
+    .progressBarItem{
+        width: 6px;
+        margin-left: 3px;
+    }
+}

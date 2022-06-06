@@ -1,0 +1,41 @@
+.commandLineContainer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.commandLine{
+    font-size: 22px;
+    color: #d1fb84;
+    font-family: CodeFont;
+    caret-color: transparent;
+}
+
+.commandLineInput {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    outline:none;
+}
+
+.caret{
+    display: none;
+    width: 4px;
+    height: 22px;
+    background-color: #d1fb84;
+    animation-name: caret;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1.9s;
+}
+
+.commandLineInput:focus + .caret{
+    display: block;
+}
+
+@keyframes caret {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}

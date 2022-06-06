@@ -1,0 +1,44 @@
+.mario {
+    margin-top: 100px;
+    width: 180px;
+    height: 100px;
+    animation-direction: reverse;
+    animation-duration: 3s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes move {
+    from {
+        margin-left: 80%;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+
+@media (min-width: 0) and (max-width: 999px) {
+    .mario {
+        margin-top: 20px;
+        width: 100px;
+        height: 60px;
+        animation-direction: reverse;
+        animation-duration: 3s;
+        animation-name: moveMobile;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+
+@keyframes moveMobile {
+    from {
+        margin-left: 50%;
+    }
+    to {
+        margin-left: 0;
+    }
+}
